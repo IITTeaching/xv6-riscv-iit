@@ -20,3 +20,8 @@
 #define SYS_link   19
 #define SYS_mkdir  20
 #define SYS_close  21
+#define SYS_newsharedpage  22
+#define SYS_readsharedpage 23
+#define SYS_writesharedpage 24
+#define SYS_freesharedpage 25
+

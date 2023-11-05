@@ -36,3 +36,8 @@ entry("getpid");
 entry("sbrk");
 entry("sleep");
 entry("uptime");
+entry("newsharedpage");
+entry("readsharedpage");
+entry("writesharedpage");
+entry("freesharedpage");
+

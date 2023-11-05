@@ -39,3 +39,7 @@ void free(void*);
 int atoi(const char*);
 int memcmp(const void *, const void *, uint);
 void *memcpy(void *, const void *, uint);
+int newsharedpage(int key);
+int readsharedpage(int key, int offset, int num_bytes, void *buffer);
+int writesharedpage(int key, int offset, int num_bytes, void *buffer);
+int freesharedpage(int key);

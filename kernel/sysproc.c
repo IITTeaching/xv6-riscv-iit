@@ -89,3 +89,31 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
+uint64
+sys_newsharedpage(void)
+{
+//    int key = myproc()->trapframe->a0;
+    return 1;
+}
+// ... 类似的实现其他函数
+
+
+uint64
+sys_readsharedpage(void)
+{
+//    int key = myproc()->trapframe->a0;
+    return 1;
+}
+uint64
+sys_writesharedpage(void)
+{
+//    int key = myproc()->trapframe->a0;
+    return 1;
+}
+
+uint64
+sys_freesharedpage(void)
+{
+//    int key = myproc()->trapframe->a0;
+    return 1;
+}
