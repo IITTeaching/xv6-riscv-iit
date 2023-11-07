@@ -43,3 +43,4 @@ int newsharedpage(int key);
 int readsharedpage(int key, int offset, int num_bytes, void *buffer);
 int writesharedpage(int key, int offset, int num_bytes, void *buffer);
 int freesharedpage(int key);
+int get_shared_page_info(int key);

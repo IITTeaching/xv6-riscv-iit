@@ -24,4 +24,5 @@
 #define SYS_readsharedpage 23
 #define SYS_writesharedpage 24
 #define SYS_freesharedpage 25
+#define SYS_get_shared_page_info 26
 

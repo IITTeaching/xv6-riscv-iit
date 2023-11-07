@@ -105,6 +105,8 @@ extern uint64 sys_newsharedpage(void);
 extern uint64 sys_readsharedpage(void);
 extern uint64 sys_writesharedpage(void);
 extern uint64 sys_freesharedpage(void);
+extern uint64 sys_get_shared_page_info(void);
+
 
 
 // An array mapping syscall numbers from syscall.h
@@ -135,6 +137,7 @@ static uint64 (*syscalls[])(void) = {
 [SYS_readsharedpage] sys_readsharedpage,
 [SYS_writesharedpage] sys_writesharedpage,
 [SYS_freesharedpage] sys_freesharedpage,
+[SYS_get_shared_page_info] sys_get_shared_page_info,
 };
 
 void

@@ -40,4 +40,5 @@ entry("newsharedpage");
 entry("readsharedpage");
 entry("writesharedpage");
 entry("freesharedpage");
+entry("get_shared_page_info");
 
