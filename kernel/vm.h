@@ -9,7 +9,8 @@
 // 共享页面数据结构的声明
 struct shared_page {
     int key;
-    char *physical_address; // 物理地址指针
+    char *physical_address; // 页的物理地址指针
+    uint64 virtual_address; // Virtual address in the creator's address space
     int ref_count;          // 引用计数
     int creator_pid;        // 创建此共享页面的进程的PID
     int shared_procs[MAX_SHARED_PROC];  // 与该页面关联的进程ID数组。
